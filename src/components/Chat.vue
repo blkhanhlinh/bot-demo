@@ -47,7 +47,7 @@
             <div
               class="rounded-full flex items-center justify-center p-2 bg-bg-highlight h-9 w-9 overflow-hidden mt-3"
             >
-              <img src="../assets/icons/bot.svg" />
+              <img src="../assets/bot.svg" />
             </div>
             <div
               v-if="pair.loading"
@@ -64,7 +64,7 @@
               >
                 <VueShowdown :markdown="pair.answer" />
               </div>
-              <div
+              <!-- <div
                 v-if="pair.audioUrl"
                 @click="toggleAudio(pair)"
                 class="cursor-pointer rounded-full flex items-center justify-center p-2 h-9 w-9 overflow-hidden mt-3 bg-bg-highlight"
@@ -96,7 +96,7 @@
                 >
                   <path d="M6 6H18V18H6V6Z" fill="#F3F3F3" />
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@
       </div>
       <div class="w-full p-4">
         <div class="w-full flex gap-1 justify-between">
-          <div class="p-1 flex items-center">
+          <!-- <div class="p-1 flex items-center">
             <svg
               v-if="!isRecording"
               width="24"
@@ -150,11 +150,11 @@
                 <path d="M6 6H18V18H6V6Z" fill="#313843" />
               </svg>
             </div>
-          </div>
+          </div> -->
           <textarea
             v-model="message"
             class="w-full bg-bg-hover rounded-full p-4 overflow-y-hidden max-h-52 resize-none"
-            placeholder="Message Nexus Bot"
+            placeholder="Nhắn tin với tôi ở đây nè 😃"
             @keydown="handleKeyPress"
             @input="adjustHeight"
             rows="1"
